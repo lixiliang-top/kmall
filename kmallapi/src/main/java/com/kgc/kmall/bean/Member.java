@@ -41,6 +41,31 @@ public class Member {
 
     private Integer historyIntegration;
 
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", memberLevelId=" + memberLevelId +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", phone='" + phone + '\'' +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                ", icon='" + icon + '\'' +
+                ", gender=" + gender +
+                ", birthday=" + birthday +
+                ", city='" + city + '\'' +
+                ", job='" + job + '\'' +
+                ", personalizedSignature='" + personalizedSignature + '\'' +
+                ", sourceType=" + sourceType +
+                ", integration=" + integration +
+                ", growth=" + growth +
+                ", luckeyCount=" + luckeyCount +
+                ", historyIntegration=" + historyIntegration +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }
