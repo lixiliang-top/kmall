@@ -4,7 +4,8 @@ import com.kgc.kmall.bean.Member;
 import com.kgc.kmall.bean.MemberExample;
 import com.kgc.kmall.service.MemberService;
 import com.kgc.kmall.user.mapper.MemberMapper;
-import org.springframework.stereotype.Service;
+import org.apache.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
  * @author 李锡良
  * @create 2020-12-15 16:17
  */
+@Component
 @Service
 public class MemberServiceImpl implements MemberService {
     @Resource
