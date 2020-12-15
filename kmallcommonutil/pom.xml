@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.kgc.kmal</groupId>
+    <groupId>com.kgc.kmall</groupId>
     <artifactId>kmall-common-util</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -25,4 +25,5 @@
         </dependency>
     </dependencies>
 
+    
 </project>
