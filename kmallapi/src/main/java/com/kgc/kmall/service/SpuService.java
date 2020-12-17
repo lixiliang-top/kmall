@@ -1,5 +1,6 @@
 package com.kgc.kmall.service;
 
+import com.kgc.kmall.bean.PmsBaseSaleAttr;
 import com.kgc.kmall.bean.PmsProductInfo;
 
 import java.util.List;
@@ -11,5 +12,7 @@ import java.util.List;
 public interface SpuService {
 
     List<PmsProductInfo> selectPmsProductCatalog3Id(Long catalog3Id);
+
+    List<PmsBaseSaleAttr> selectPmsBaseSaleAttrAll();
 
 }
