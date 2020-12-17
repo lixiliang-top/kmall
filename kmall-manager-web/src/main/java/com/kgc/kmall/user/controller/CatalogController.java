@@ -41,30 +41,4 @@ public class CatalogController {
         return pmsBaseCatalog3s;
     }
 
-    @Reference
-    AttrService attrService;
-
-    @RequestMapping("/attrInfoList")
-    public List<PmsBaseAttrInfo> attrInfoList(Long catalog3Id){
-        List<PmsBaseAttrInfo> pmsBaseAttrInfos = attrService.selectAttrInfoAll(catalog3Id);
-        return pmsBaseAttrInfos;
-    }
-
-    @RequestMapping("/saveAttrInfo")
-    public Integer saveAttrInfo(@RequestBody PmsBaseAttrInfo attrInfo){
-        Integer i = attrService.add(attrInfo);
-        return i;
-    }
-
-
-    @RequestMapping("/getAttrValueList")
-    public List<PmsBaseAttrValue> getAttrValueList(Long attrId){
-        List<PmsBaseAttrValue> pmsBaseAttrValues = attrService.selectAttrInfoId(attrId);
-        return pmsBaseAttrValues;
-    }
-
-
-
-
-
 }

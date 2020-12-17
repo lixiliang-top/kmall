@@ -5,7 +5,6 @@ import com.kgc.kmall.service.CatalogService;
 import com.kgc.kmall.user.mapper.PmsBaseCatalog1Mapper;
 import com.kgc.kmall.user.mapper.PmsBaseCatalog2Mapper;
 import com.kgc.kmall.user.mapper.PmsBaseCatalog3Mapper;
-import com.sun.org.apache.xml.internal.resolver.CatalogManager;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
 
