@@ -1,5 +1,6 @@
 package com.kgc.kmall.user.mapper;
 
+import com.kgc.kmall.bean.PmsBaseAttrValue;
 import com.kgc.kmall.bean.PmsProductImage;
 import com.kgc.kmall.bean.PmsProductImageExample;
 import org.apache.ibatis.annotations.Param;
@@ -28,4 +29,7 @@ public interface PmsProductImageMapper {
     int updateByPrimaryKeySelective(PmsProductImage record);
 
     int updateByPrimaryKey(PmsProductImage record);
+
+    int insertProductInfo(@Param("productId")Long productId,@Param("spuImageList")List<PmsProductImage> spuImageList);
+
 }

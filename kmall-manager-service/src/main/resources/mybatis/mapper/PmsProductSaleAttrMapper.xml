@@ -6,7 +6,18 @@
     <result column="product_id" property="productId" jdbcType="BIGINT" />
     <result column="sale_attr_id" property="saleAttrId" jdbcType="BIGINT" />
     <result column="sale_attr_name" property="saleAttrName" jdbcType="VARCHAR" />
-  </resultMap>
+</resultMap>
+
+  <insert id="insertProductSaleAttr">
+    insert
+    into
+    pms_product_sale_attr(product_id,sale_attr_id,sale_attr_name)
+    values
+    <foreach collection="spuSaleAttrList" separator="," item="val">
+      (#{productId},#{val.saleAttrId},#{val.saleAttrName})
+    </foreach>
+  </insert>
+
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
