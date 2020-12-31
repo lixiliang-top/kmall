@@ -31,4 +31,7 @@ public interface PmsProductSaleAttrMapper {
     int updateByPrimaryKey(PmsProductSaleAttr record);
 
     int insertProductSaleAttr(@Param("productId")Long productId,@Param("spuSaleAttrList")List<PmsProductSaleAttr> spuSaleAttrList);
+
+    //添加了ischecket属性
+    List<PmsProductSaleAttr> spuSaleAttrListIsCheck(@Param("spuId") Long spuId,@Param("skuId") Long skuId);
 }
